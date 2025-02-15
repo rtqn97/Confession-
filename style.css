@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.blinking-text {
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+    animation: blink 0.5s infinite alternate;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
